@@ -1,0 +1,100 @@
+.home {
+    background-color: #000000;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+ 
+  
+  .highlight {
+    color: #00ff00;
+  }
+  
+  .typing-effect {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff00;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #00ff00; 
+    animation: typing 7s steps(35) 1s infinite normal forwards, blink 0.75s step-end infinite 1s, disappear 1s forwards 2s;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+    @keyframes disappear {
+    100% {
+      border-right: transparent; 
+    }
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .cta-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn a {
+    text-decoration: none;
+    color: #121212;
+    display: inline-block;
+  }
+  
+  .cta-btn:hover {
+    background-color: #00cc00;
+  }
+  
+  .cta-btn:focus {
+    outline: none;
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      max-width: 900px;
+    }
+  
+    .intro-text {
+      font-size: 1.5rem;
+    }
+  
+    .cta-btn {
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -1,0 +1,29 @@
+:root {
+    --fondo: #000000;
+    --texto-principal: #e0e0e0;
+    --texto-secundario: #b3b3b3;
+    --acento: #4caf50;
+    --enlaces: #03a9f4;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto-principal);  
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: var(--enlaces);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #5cc9ff;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
