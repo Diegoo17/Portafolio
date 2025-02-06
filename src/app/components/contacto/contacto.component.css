@@ -1,0 +1,140 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px; 
+  max-width: 1900px;
+  max-height: 2000px;
+  margin: 20px auto; 
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+}
+
+.contact-form, .contact-info {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.contact-form {
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  animation-delay: 0.5s;
+}
+
+.contact-info {
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 35%;
+  animation-delay: 1s;
+}
+
+.contact-form h2, .contact-info h2 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
+}
+
+.contact-form button:hover {
+  background-color: #6d6d6a;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.social-button i {
+  font-size: 20px;
+}
+
+.social-button.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.social-button.github:hover {
+  background-color: rgb(132, 132, 132);
+}
+
+.social-button.instagram:hover {
+  background-color: #e4405f;
+}
+
+.social-button.whatsapp:hover {
+  background-color: #25d366;
+}
+
+.social-button.gmail:hover {
+  background-color: #fbbc05;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(0); /* Eliminar el desplazamiento hacia abajo */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Eliminar el desplazamiento hacia abajo */
+  }
+}
+
+.contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: black;
+    color: #e0e0e0;
+    resize: none;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+  
