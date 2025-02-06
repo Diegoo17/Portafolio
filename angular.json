@@ -16,7 +16,6 @@
             "outputPath": "dist/Portafolio",
             "baseHref": "/Portafolio/",
             "deployUrl": "/Portafolio/",
-            "hash" : true,
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
