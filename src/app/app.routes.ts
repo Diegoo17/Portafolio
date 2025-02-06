@@ -3,7 +3,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { DisenosComponent } from './disenos/disenos.component';
+import { DisenosComponent } from './components/disenos/disenos.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
