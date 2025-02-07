@@ -113,11 +113,11 @@
 @keyframes fadeIn {
   0% {
       opacity: 0;
-      transform: translateY(0); /* Eliminar el desplazamiento hacia abajo */
+      transform: translateY(0);
   }
   100% {
       opacity: 1;
-      transform: translateY(0); /* Eliminar el desplazamiento hacia abajo */
+      transform: translateY(0); 
   }
 }
 
