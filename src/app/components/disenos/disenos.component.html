@@ -1,29 +1,30 @@
 <section id="proyectos" class="proyectos">
-    <h2 class="titulo zoom-in">Mis Diseños</h2>
-    <div class="proyectos-container">
-      <div class="proyecto zoom-in">
-        <img src="icons/logo.png" alt="Proyecto 1">
-        <div class="proyecto-info">
-          <h3>Pizzeria La Mini</h3>
-          <p>Logo para la Pizzeria La Mini. Cuenta con mockups para mostrar cómo se vería en distintos formatos, como carteles o menús. 
-            Ademas cuenta con una versión alternativa del logo.
-          </p>
-          <a href="https://www.behance.net/gallery/218030119/The-Box-Burger" class="boton-proyecto" target="_blank">Ver Diseño</a>
-        </div>
+  <h2 class="titulo zoom-in">Mis Diseños</h2>
+  <div class="proyectos-container">
+    <div 
+      class="proyecto zoom-in" 
+      *ngFor="let proyecto of proyectos" 
+      (click)="abrirGaleria(proyecto.imagenes)"
+    >
+      <img [src]="proyecto.imagenes[0]" [alt]="proyecto.nombre">
+      <div class="proyecto-info">
+        <h3>{{ proyecto.nombre }}</h3>
+        <p>{{ proyecto.descripcion }}</p>
+        <a [href]="proyecto.enlace" class="boton-proyecto" target="_blank">Ver Diseño</a>
       </div>
-      
-      <div class="proyecto zoom-in">
-        <img src="icons/1.png" alt="Proyecto 2">
-        <div class="proyecto-info">
-          <h3>The Box</h3>
-          <p>Logo para la hamburgueseria The Box. Cuenta con mockups, para demostrar como se veria en distintos formatos, y una version
-            alternativa del logo </p>
-          <a href="https://www.behance.net/gallery/218101385/Pizzeria-La-Mini" class="boton-proyecto" target="_blank">Ver Diseño</a>
-        </div>
     </div>
+  </div>
 
-    </div>
-      
-   
-  </section>
+  <div *ngIf="mostrarModal" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="cerrarGaleria()">&times;</span>
   
+      <!-- Contenedor de la imagen con botones de navegación -->
+      <div class="modal-body">
+        <button class="prev" (click)="anteriorImagen()">&#10094;</button>
+        <img [src]="imagenesProyecto[indiceImagen]" class="galeria-img">
+        <button class="next" (click)="siguienteImagen()">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
